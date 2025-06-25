@@ -11,6 +11,7 @@ export default function RootLayout() {
   const rendererCards =()=>{
     const Cards =tstdata.map ((item)=>{
       return(
+        <Card img ={item.img} name={item.name} price={item.price}/>
       )
 
     })
