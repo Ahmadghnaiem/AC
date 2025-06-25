@@ -1,4 +1,22 @@
 import Images from "../images/Images";
+export const tstdata=[
+  {
+    name:"TADIRAN",
+    img :Images.Tadiran(),
+    price:"2500",
+  }, 
+  {
+    name:"Family",
+    img :Images.Family(),
+    price:"2700",
+  },
+  {
+    name:"Haier",
+    img :Images.Haier(),
+    price:"3000",
+  },
+]
+
 
 export const compaines = [
   {
@@ -28,30 +46,30 @@ export const compaines = [
 ];
 
 export const data = [
-  {
-    brand: "TADIRAN on/off /INVERTER/MULTI INVERTER/VRF",
-    image: Images.Tadiran(),
-  },
-  {
-    brand: "electra on/off /INVERTER/MULTI INVERTER/VRF",
-    image: Images.Electra(),
-  },
-  {
-    brand: "samsung on/off /INVERTER/MULTI INVERTER/VRF",
-    image: Images.Samsung(),
-  },
-  {
-    brand: "Haier on/off /INVERTER/MULTI INVERTER/VRF",
-    image: Images.Haier(),
-  },
-  {
-    brand: "Tornado on/off /INVERTER/MULTI INVERTER/VRF",
-    image: Images.Tornado(),
-  },
-  {
-    brand: "Family on/off /INVERTER/MULTI INVERTER/VRF",
-    image: Images.Family(),
-  },
+  // {
+  //   brand: "TADIRAN on/off /INVERTER/MULTI INVERTER/VRF",
+  //   image: Images.Tadiran(),
+  // },
+  // {
+  //   brand: "electra on/off /INVERTER/MULTI INVERTER/VRF",
+  //   image: Images.Electra(),
+  // },
+  // {
+  //   brand: "samsung on/off /INVERTER/MULTI INVERTER/VRF",
+  //   image: Images.Samsung(),
+  // },
+  // {
+  //   brand: "Haier on/off /INVERTER/MULTI INVERTER/VRF",
+  //   image: Images.Haier(),
+  // },
+  // {
+  //   brand: "Tornado on/off /INVERTER/MULTI INVERTER/VRF",
+  //   image: Images.Tornado(),
+  // },
+  // {
+  //   brand: "Family on/off /INVERTER/MULTI INVERTER/VRF",
+  //   image: Images.Family(),
+  // },
   {
     brand: ["TADIRAN"],
     tech: "on/off",
@@ -287,4 +305,174 @@ export const data = [
     errorMessage: "תקלת רגש סוללה",
     errorDescription: "",
   },
+{
+ brand: ["Samsung"],
+    tech: "VRF",
+    model: ["HEAT PUMP","HEAT RECOVERY"],
+     errorCode: "101",
+    errorMessage:"תקלת תקשורת בין יחידות פנים ליחידת חוץ, אין תקשורת עם יחידת חוץ",
+
+},
+{
+brand: ["Samsung"],
+    tech: "VRF",
+    model: ["HEAT PUMP","HEAT RECOVERY"],
+     errorCode: "102",
+    errorMessage:"תקלת תקשורת בין יחידות פנים ליחידת חוץ",
+},
+{
+  brand: ["Samsung"],
+    tech: "VRF",
+    model: ["HEAT PUMP","HEAT RECOVERY"],
+     errorCode: "108",
+    errorMessage:"כתובות מאיידים או מעגל כפולים",
+},
+{
+   brand: ["Samsung"],
+    tech: "VRF",
+    model: ["HEAT PUMP","HEAT RECOVERY"],
+     errorCode: "121",
+    errorMessage:"רגש אוויר חוזר מקצר/מנותק",
+},
+{
+   brand: ["Samsung"],
+    tech: "VRF",
+    model: ["HEAT PUMP","HEAT RECOVERY"],
+     errorCode: "122",
+    errorMessage:"רגש IN EVA ביחידת הפנים מקצר/מנותק",
+},
+{
+  brand: ["Samsung"],
+    tech: "VRF",
+    model: ["HEAT PUMP","HEAT RECOVERY"],
+     errorCode: "123",
+    errorMessage:"רגש OUT EVA ביחידת הפנים מקצר/מנותק",
+},
+{
+  brand: ["Samsung"],
+    tech: "VRF",
+    model: ["HEAT PUMP","HEAT RECOVERY"],
+     errorCode: "128",
+    errorMessage:"ערך רגש טמפ' IN EVA ביחידת הפנים לא בטווח ",
+},
+{
+  brand: ["Samsung"],
+    tech: "VRF",
+    model: ["HEAT PUMP","HEAT RECOVERY"],
+     errorCode: "129",
+    errorMessage:"ערך רגש טמפ' OUT EVA ביחידת הפנים לא בטווח",
+},
+{
+   brand: ["Samsung"],
+    tech: "VRF",
+    model: ["HEAT PUMP","HEAT RECOVERY"],
+     errorCode: "149",
+    errorMessage:'תקלת הגדרת פיקוד יט"א מאסטר',
+},
+{
+brand: ["Samsung"],
+    tech: "VRF",
+    model: ["HEAT PUMP","HEAT RECOVERY"],
+     errorCode: "151",
+    errorMessage:"שסתום התפשטות במאייד לא יכול להיפתח עד הסוף(זיהוי שני)",
+},
+{
+  brand: ["Samsung"],
+    tech: "VRF",
+    model: ["HEAT PUMP","HEAT RECOVERY"],
+     errorCode: "152",
+    errorMessage:"שסתום התפשטות במאייד לא יכול להיסגר עד הסוף(זיהוי שני)",
+},
+{
+  brand: ["Samsung"],
+    tech: "VRF",
+    model: ["HEAT PUMP","HEAT RECOVERY"],
+     errorCode: "153",
+    errorMessage:"מצוף של משאבת ניקוז דרוך מעל 60 שניות (זיהוי שני)",
+},
+{
+   brand: ["Samsung"],
+    tech: "VRF",
+    model: ["HEAT PUMP","HEAT RECOVERY"],
+     errorCode: "154",
+    errorMessage:"אין משוב ממנוע פאן של יחידת פנים",
+},
+{
+  brand: ["Samsung"],
+    tech: "VRF",
+    model: ["HEAT PUMP","HEAT RECOVERY"],
+     errorCode: "161",
+    errorMessage:"(הגנת מערכת) HP דרישה לקירור וחימום בו זמנית במעגל " ,
+},
+{
+   brand: ["Samsung"],
+    tech: "VRF",
+    model: ["HEAT PUMP","HEAT RECOVERY"],
+     errorCode: "162",
+    errorMessage:"תקלת איפרום ביחידת החוץ",
+},
+{
+  brand: ["Samsung"],
+    tech: "VRF",
+    model: ["HEAT PUMP","HEAT RECOVERY"],
+     errorCode: "163",
+    errorMessage:"הגדרה שגויה של קוד הפעלה ביחידת הפנים או תקלה באיפרום של יחידת החוץ", 
+},
+{
+   brand: ["Samsung"],
+    tech: "VRF",
+    model: ["HEAT PUMP","HEAT RECOVERY"],
+     errorCode: "180",
+    errorMessage:"(זיהוי ראשון) MCU-דריכה של שני סולנואידים בו זמנית קירור ו חימום בפורט אחד ב",
+},
+{
+  brand: ["Samsung"],
+    tech: "VRF",
+    model: ["HEAT PUMP","HEAT RECOVERY"],
+     errorCode: "181",
+    errorMessage:"(זיהוי שני) MCU-דריכה של שני סולנואידים בו זמנית קירור ו חימום בפורט אחד ב",
+},
+{
+  brand: ["Samsung"],
+    tech: "VRF",
+    model: ["HEAT PUMP","HEAT RECOVERY"],
+     errorCode: "185",
+    errorMessage:" חיווטי תקשורת וחשמל לא תקינים ביחידת הפנים" 
+},
+{
+   brand: ["Samsung"],
+    tech: "VRF",
+    model: ["HEAT PUMP","HEAT RECOVERY"],
+     errorCode: "186",
+    errorMessage:"לא תקין SPI משוב מאביזר ",
+},
+{
+  brand: ["Samsung"],
+    tech: "VRF",
+    model: ["HEAT PUMP","HEAT RECOVERY"],
+     errorCode: "190",
+    errorMessage:'AUTO PIPE של יחידת פנים במהלך  EVA IN-אין שינוי טמפ ב '
+},
+{
+  brand: ["Samsung"],
+    tech: "VRF",
+    model: ["HEAT PUMP","HEAT RECOVERY"],
+     errorCode: "191",
+    errorMessage:'AUTO PIPE של יחידת פנים במהלך  EVA OUT-אין שינוי טמפ ב ',
+},
+{
+   brand: ["Samsung"],
+    tech: "VRF",
+    model: ["HEAT PUMP","HEAT RECOVERY"],
+     errorCode: "198",
+    errorMessage:"פיוז תרמי ביחידת הפנים תקול/מנותק ",
+},
+{
+  brand: ["Samsung"],
+    tech: "VRF",
+    model: ["HEAT PUMP","HEAT RECOVERY"],
+     errorCode: "201",
+    errorMessage:"תקלת תקשורת בין יחידת חוץ ליחידות פנים ",
+},
+
 ];

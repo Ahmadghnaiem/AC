@@ -121,6 +121,7 @@
 // });
 
 import {
+  ScrollViewBase,
   StyleSheet,
   Text,
   TextInput,
@@ -132,9 +133,36 @@ import { Picker } from "@react-native-picker/picker";
 import { Search } from "@/components/Search";
 import { ScrollView } from "react-native";
 import ErrorItem from "@/components/ErrorItem";
+import { data, tstdata } from "@/assets/res/data";
 
 const tool = () => {
   const [SearchText, SetSeaechText] = useState("");
+
+  const filterData = () => {
+    const filteredData = data.filter((item) => {
+      return item.errorCode
+        .toLocaleLowerCase()
+        .includes(SearchText.toLocaleLowerCase());
+    });
+
+    return filteredData;
+  };
+
+  const rendererCards = () => {
+    const items = filterData();
+    const errorItem = items.map((item) => {
+      return (
+        <ErrorItem
+          brand={item.brand}
+          tech={item.tech}
+          errorCode={item.errorCode}
+          errorMessage={item.errorMessage}
+          errorDescription={item.errorDescription}
+        />
+      );
+    });
+    return errorItem;
+  };
 
   return (
     <View style={styles.container}>
@@ -144,9 +172,10 @@ const tool = () => {
         value={SearchText}
         onChangeText={(val) => SetSeaechText(val)}
       />
-      <ErrorItem/>
 
-      <View style={styles.techContainer}>
+      <ScrollView>{rendererCards()}</ScrollView>
+
+      {/* <View style={styles.techContainer}>
         <Text style={styles.tech}>Tech</Text>
         <Picker style={styles.pickerContainer}>
           <Picker.Item label="ON/OFF" />
@@ -167,7 +196,7 @@ const tool = () => {
         <TouchableOpacity style={styles.SolutionError}>
           <Text>Give Me Solution</Text>
         </TouchableOpacity>
-      </View>
+      </View> */}
     </View>
   );
 };
@@ -203,5 +232,5 @@ const styles = StyleSheet.create({
   searchModel: {
     marginTop: 50,
   },
-  SolutionError: {},
+  // SolutionError: {},
 });

@@ -4,6 +4,10 @@ import { FontAwesome5 } from '@expo/vector-icons'
 import { router } from 'expo-router'
 
 const index = () => {
+
+  console.log("index");
+  
+
   setTimeout(() => {
     router.replace("/home")
   }, 1 * 1000)
